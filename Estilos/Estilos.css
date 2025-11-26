@@ -1,0 +1,18 @@
+section > p{
+    font-size: 25px;
+    color:rgb(0, 102, 255);
+}
+
+header {
+    color:green;
+}
+.pie{
+    color:blueviolet;
+}
+#esterojo{
+    color:red;
+}
+h1~p{
+    font-size: 10px;
+    color: cyan;
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <table align="center" border="5" bordercolor="000000" bgcolor="258DA1">
+        <tr>
+            <td>
+                <form action="enviar.php" method="post" name="FORMULARIO1">
+
+                    <label>Usuario</label>
+                    <input type="text" maxlenght="9" value="Dame tu Usuario">
+
+                    <label>Contraseña</label>
+                    <input type="text">
+
+                    <label> DNI </label>
+                    <input type="text" name="dni" placefolder="formato 12345678x" pattern="[0-9]{8}-[a-zA-Z]{1}">
+                    <br>
+                    <label> Sexo </label>
+                    <input type="text" name="sexo" maxlenght="9" disabled>
+                    <br>
+                    <label> Sexo </label>
+                    <input type="text" name="sexo" maxlenght="9" disabled placeholder="Hombre">
+                    <br>
+                    <label for="Música">Música</label>
+                    <input type="checkbox" name="música" value="Si">
+                    <br>
+                    <label for="Deporte">Deporte</label>
+                    <input type="radio" name="Deporte" value="">
+                    <br>
+                    <label for="Ficheros">Ficheros</label>
+                    <input type="file" name="Ficheros" accept=".doc;.jpg">
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+
+                    <label for="gustospersonales">Música</label>
+                    <input type="checkbox" name="gustospersonales" value="1">
+
+                    <label for="gustospersonales">Deporte</label>
+                    <input type="checkbox" name="gustospersonales" value="1">
+
+                    <label for="gustospersonales">Senderismo</label>
+                    <input type="checkbox" name="gustospersonales" value="1">
+
+                    <br>
+                    <label for="ciclo">Programación</label>
+                    <input type="radio" name="ciclo" value="1">
+
+                    <label for="ciclo">LMYS</label>
+                    <input type="radio" name="ciclo" value="1">
+
+                    <label for="ciclo">ED</label>
+                    <input type="radio" name="ciclo" value="1">
+                    <br>
+                    <input type="date" name="fecha" id="for" value="año-mes-dia">
+                    <br>
+                    <input type="color" name="color" id="color" value="">
+                    <br>
+                    <p align="center"><input type="reset" value="REINICIAR"></p>
+
+                    <button type="submit"><img src="imagenes/enviar.png" with="50" height="50"></button>
+
+                </form>
+
+            </td>
+
+        </tr>
+
+
+    </table>
+</body>
+
+</html>
