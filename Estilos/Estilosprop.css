@@ -3,9 +3,26 @@
     font-size: 24px;
     color: brown;
     background-color: rgb(114, 136, 136);
+    text-align: justify;
 }
 
 #dos{
 
     font:italic bold 14px Arial;
+    letter-spacing: 5px;
+}
+
+#dos a:link{
+    text-decoration: none;
+    color: blue;
+}
+
+#dos a:visited{
+    text-decoration: none;
+    color: green;
+}
+
+#dos a:hover{
+    text-decoration: none;
+    color: orange;
 }
