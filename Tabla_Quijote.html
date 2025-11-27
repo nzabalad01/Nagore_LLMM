@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Etiquetas de tablas</title>
+    <meta charset="utf-8" />
+</head>
+
+<body>
+
+    <table style="border:5px solid #800000; font-size: 20px; border-spacing: 10px">
+
+        <caption><strong>Referencias aplicadas a don Quijote</strong></caption>
+
+        <colgroup>
+            <col style="background:#ffaaaa" />
+            <col span="2" style="background:#ffffaa" />
+        </colgroup>
+
+        <thead>
+            <tr>
+                <th>Parte</th>
+                <th>Nombre</th>
+                <th>Comentario</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Primera</td>
+                <td>Don Quijote de la Mancha</td>
+                <td>Ideado por él mismo</td>
+            </tr>
+            <tr>
+                <td>Primera</td>
+                <td>Caballero de la Triste Figura</td>
+                <td>Apodo creado por Sancho
+                    Panza</td>
+            </tr>
+            <tr>
+                <td>Segunda</td>
+                <td>Caballero de los Leones</td>
+                <td>Apelativo creado por don
+                    Quijote</td>
+            </tr>
+            <tr>
+                <td>Segunda</td>
+                <td>Alonso Quijano</td>
+                <td>Nombre real</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <th>******</th>
+                <th>Número total de referencias</th>
+                <th>4</th>
+            </tr>
+        </tfoot>
+
+    </table>
+</body>
+<br>
+
+<head>
+    <title>Ejemplo de imagen</title>
+</head>
+
+<body>
+    <details>
+        <summary>Personajes del Quijote</summary>
+        <p>Don Quijote. Personaje principal. Caballero andante</p>
+        <p>Sancho Panza. Escudero de don Quijote</p>
+        <p>Pero Pérez. Cura del pueblo</p>
+        <p>Maese Nicolás. Barbero del pueblo</p>
+        <p>Sansón Carrasco. Vecino que trata hacer volver a don Quijote al pueblo</p>
+    </details>
+    <br>
+    <figure>
+        <img src="Imágenes/google.PNG" />
+        <figcaption>Fig 1. Logo de Google</figcaption>
+    </figure>
+
+</body>
+<br>
+
+<head>
+    <title>Ejemplo de utilización de iframe</title>
+</head>
+
+<body>
+    <table align="center" border="0">
+        <tr>
+            <td>
+                <h1>Prueba de enlaces en un marco</h1>
+                <p><a href="https://www.elmundo.es/" target="destino">Diario el Mundo</a></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <iframe name="destino" width="800" height="600" scrolling="auto"></iframe>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>
