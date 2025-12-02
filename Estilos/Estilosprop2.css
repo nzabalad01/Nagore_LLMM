@@ -11,6 +11,8 @@ body {
     padding: 5px 5px;
     background-color: bisque;
     border: 4px solid #ff0000;
+    border-radius: 20px;
+    box-shadow: black 10px;
 }
 
 #texto p {
