@@ -12,7 +12,7 @@ body {
     background-color: bisque;
     border: 4px solid #ff0000;
     border-radius: 20px;
-    box-shadow: black 10px;
+    box-shadow: black 10px 10px 15px; 
 }
 
 #texto p {
