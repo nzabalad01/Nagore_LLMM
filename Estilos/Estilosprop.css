@@ -10,6 +10,7 @@
 
     font:italic bold 14px Arial;
     letter-spacing: 5px;
+    background-color: rgb(107, 187, 230, 0.9);
 }
 
 #dos a:link{
@@ -26,3 +27,13 @@
     text-decoration: none;
     color: orange;
 }
+
+#cuatro p{
+    font-size: 18px;
+    color: #000000;
+    text-align: left;
+    width: 300px;
+    height: 150px;
+    background-color: rgb(214, 0, 16, 0.5);
+    overflow: scroll;
+} 
