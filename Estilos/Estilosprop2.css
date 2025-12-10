@@ -12,7 +12,8 @@ body {
     border: 4px solid #1b1a1a;
     border-radius: 60px;
     box-shadow: 10px 10px 15px rgb(184, 31, 31) inset ; 
-    background: -webkit-radial-gradient(center,ellipse,red 10%,white 40%,blue 50%);
+    background:radial-gradient(ellipse at top left, #40ff40 50%, #ffffff 70%,#000000 90%);
+    filter: blur(2px);
 }
 
 #texto p {

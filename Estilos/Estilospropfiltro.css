@@ -1,0 +1,50 @@
+
+#capitulo {
+    font: bold 48px Arial, Helvetica, sans-serif;
+    color: rgb(123, 34, 34);
+    margin: 0px 0px;
+    width: 350px;
+    padding:25px;
+    border: 5px solid #1b1a1a;
+    border-radius: 60px;
+    background-color: #ccccff;
+    transition:transform 1s ease-in-out 0s;
+}
+#capitulo-hover {
+    transform: rotate(5deg);
+}
+#filtro1 {
+    width: 100px;
+    margin: 15px auto;
+    filter: grayscale(0.9);
+}
+#filtro2 {
+    width: 100px;
+    margin: 15px auto;
+    filter: sepia(0.9);
+}
+#filtro3 {
+    width: 100px;
+    margin: 15px auto;
+    filter: brightness(0.9);
+}
+#filtro4 {
+    width: 100px;
+    margin: 15px auto;
+    filter: hue-rotate(90deg);
+}
+#filtro5 {
+    width: 100px;
+    margin: 15px auto;
+    filter: invert(0.9);
+}
+#filtro6 {
+    width: 100px;
+    margin: 15px auto;
+    filter: saturate(60%);
+}
+#filtro7 {
+    width: 100px;
+    margin: 15px auto;
+    filter: opacity(20%);
+}
