@@ -2,16 +2,17 @@
 #capitulo {
     font: bold 48px Arial, Helvetica, sans-serif;
     color: rgb(123, 34, 34);
-    margin: 0px 0px;
+    margin: 0px auto;
     width: 350px;
     padding:25px;
     border: 5px solid #1b1a1a;
     border-radius: 60px;
     background-color: #ccccff;
-    transition:transform 1s ease-in-out 0s;
+    transition: transform 1s ease, background-color 1s ease;
 }
-#capitulo-hover {
-    transform: rotate(5deg);
+ #capitulo:hover {
+    transform:translate(100px,50px);
+    background-color: #9c9cff;
 }
 #filtro1 {
     width: 100px;
