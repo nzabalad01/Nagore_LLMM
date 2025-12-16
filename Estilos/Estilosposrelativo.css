@@ -1,0 +1,12 @@
+header{
+    background-color: #ffaaaa;
+}
+main{
+    background-color: #aaffaa;
+    position: relative;
+    top: 40px;
+    left: 40px;
+}
+footer{
+    background-color: #aaaaff;
+}
