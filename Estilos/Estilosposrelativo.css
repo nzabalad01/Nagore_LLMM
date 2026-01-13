@@ -1,30 +1,30 @@
 header {
-    background: rgb(236, 141, 141);
+    background: rgb(253, 162, 162);
     margin-bottom: 10px;
 }
 
 .barra {
     border: 2px solid black;
-    box-shadow: 2px 5px rgb(42, 42, 116) inset;
+    box-shadow: 2px 5px rgb(0, 121, 143) inset;
     text-align: center;
-    background-color: rgb(119, 227, 233);
+    background-color: rgb(132, 249, 255);
     margin-bottom: 10px;
     position: sticky;
-    top: 10px;
+    top: 20px;
 }
 
 .contenedor {
-    height: 100px;
-    background-color: rgb(243, 243, 68);
+    height: 1000px;
+    background-color: rgb(255, 255, 103);
     position: relative;
 }
 
 .contenedor2 {
     width: 300px;
-    background-color: rgb(123, 240, 108);
+    background-color: rgb(158, 250, 145);
     margin-left: 10px;
 }
 
 footer {
-    background: rgb(243, 87, 193);
+    background: rgb(255, 140, 219);
 }
