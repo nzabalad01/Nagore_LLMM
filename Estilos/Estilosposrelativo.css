@@ -2,7 +2,6 @@ header {
     background: rgb(236, 141, 141);
     margin-bottom: 10px;
 }
-
 .barra {
     border: 2px solid black;
     box-shadow: 2px 5px rgb(42, 42, 116) inset;
@@ -12,19 +11,16 @@ header {
     position: sticky;
     top: 10px;
 }
-
 .contenedor {
     height: 100px;
     background-color: rgb(243, 243, 68);
     position: relative;
 }
-
 .contenedor2 {
     width: 300px;
     background-color: rgb(123, 240, 108);
     margin-left: 10px;
 }
-
 footer {
     background: rgb(243, 87, 193);
 }
