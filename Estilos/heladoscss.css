@@ -1,0 +1,111 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffffff;
+}
+
+.contenedor {
+    width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Cabecera */
+.cabecera {
+    background-color: #ffffff;
+    padding-top: 20px;
+}
+
+.logo-img {
+    width: 220px;
+    display: block;
+    margin: 0 auto 5px auto;
+}
+
+.cabecera h1 {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 56px;
+    color: #ff8800;
+    text-shadow: 2px 2px #803300;
+    line-height: 1.1;
+}
+
+/* Menú */
+.menu {
+    margin-top: 15px;
+    background-color: #c7b4ff;
+    padding: 10px 0;
+    display: flex;
+    justify-content: left;
+    gap: 60px;
+}
+
+.menu a {
+    color: #550416;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Presentación */
+.presentacion {
+    background-color: #fff7aa;
+    padding: 20px 40px;
+    margin-top: 10px;
+}
+
+.presentacion p {
+    color: #b36a00;
+    line-height: 1.4;
+    font-size: 14px;
+}
+
+/* Especialidades */
+.especialidades {
+    margin-top: 20px;
+}
+
+.especialidades h2 {
+    background-color: #ff8800;
+    color: #ffffff;
+    padding: 10px 0;
+    font-size: 26px;
+}
+
+.tarjetas {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 10px;
+}
+
+.tarjeta {
+    background-color: #ffc933;
+    border: 5px solid #ffffff;
+    padding-bottom: 10px;
+}
+
+.tarjeta h3 {
+    background-color: #ffb300;
+    padding: 10px 5px;
+    font-size: 16px;
+    color: #8a3b00;
+}
+
+.tarjeta img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+}
+
+/* Pie de página */
+.pie {
+    background-color: #ff8800;
+    color: #ffffff;
+    font-size: 12px;
+    padding: 10px;
+    margin-top: 20px;
+}
