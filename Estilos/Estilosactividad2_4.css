@@ -1,0 +1,151 @@
+.rotulo {
+    width: 900px;
+    margin: 20px auto;
+    padding: 10px;
+    text-align: center;
+    background: #618bff;
+    font: bold 26px Arial, Verdana;
+    border: 5px solid #2c64ff;
+    border-radius: 20px;
+}
+
+main {
+    width: 1100px;
+    margin: 20px auto;
+    background: #dfedff;
+    position: relative;
+    overflow: auto;
+}
+
+.cajapadre_a1 {
+    width: 300px;
+    height: 230px;
+    margin: 30px;
+    position: relative;
+    overflow: hidden;
+    float: left;
+}
+
+.cajapadre_b2 {
+    width: 300px;
+    height: 230px;
+    margin: 30px;
+    position: relative;
+    overflow: hidden;
+    float: left;
+}
+
+.cajapadre_c3 {
+    width: 300px;
+    height: 230px;
+    margin: 30px;
+    position: relative;
+    overflow: hidden;
+    float: left;
+}
+
+.cajapadre_d4 {
+    width: 300px;
+    height: 230px;
+    margin: 30px;
+    position: relative;
+    overflow: hidden;
+    float: left;
+}
+
+.cajapadre_e5 {
+    width: 300px;
+    height: 230px;
+    margin: 30px;
+    position: relative;
+    overflow: hidden;
+    float: left;
+}
+
+.cajapadre_f6 {
+    width: 300px;
+    height: 230px;
+    margin: 30px;
+    position: relative;
+    overflow: hidden;
+    float: left;
+}
+
+.cajapadre_g7 {
+    width: 300px;
+    height: 230px;
+    margin: 30px;
+    position: relative;
+    overflow: hidden;
+    float: left;
+}
+
+.cajapadre_h8 {
+    width: 300px;
+    height: 230px;
+    margin: 30px;
+    position: relative;
+    overflow: hidden;
+    float: left;
+}
+
+.cajapadre_i9 {
+    width: 300px;
+    height: 230px;
+    margin: 30px;
+    position: relative;
+    overflow: hidden;
+    float: left;
+}
+
+.cajapadre_j10 {
+    width: 300px;
+    height: 230px;
+    margin: 30px;
+    position: relative;
+    overflow: hidden;
+    float: left;
+}
+
+.cajapadre_k11 {
+    width: 300px;
+    height: 230px;
+    margin: 30px;
+    position: relative;
+    overflow: hidden;
+    float: left;
+}
+
+.cajapadre_l12 {
+    width: 300px;
+    height: 230px;
+    margin: 30px;
+    position: relative;
+    overflow: hidden;
+    float: left;
+}
+
+.contenedor {
+    position: absolute;
+    top: 0px;
+    width: 300px;
+    height: 270px;
+}
+
+.contenedorsuperior {
+    width: 300px;
+    height: 230px;
+}
+
+.contenedorinferior {
+    width: 300px;
+    height: 40px;
+    padding-top: 10px;
+    background-color: rgba(200, 200, 200, 0.8);
+    text-align: center;
+    font: bold 16px Arial, Verdana, sans-serif;
+}
+
+.contenedor:hover {
+    top: -50px;
+}
