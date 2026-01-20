@@ -1,0 +1,28 @@
+div {
+    border: 2px solid;
+    border-radius: 10px;
+    width: 500px;
+    height: 500px;
+    position: relative;
+    font-size: 72px;
+}
+
+/*Posicionamiento*/
+.uno {
+    background: #ffaaaa;
+    z-index: 30;
+}
+
+.dos {
+    background: #aaffaa;
+    top: -100px;
+    left: 100px;
+    z-index: 40;
+}
+
+.tres {
+    background: #aaaaff;
+    top: -200px;
+    left: 200px;
+    z-index: 10;
+}
