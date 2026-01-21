@@ -12,6 +12,7 @@
 
 main{
     width: 900px;
+    height: 350px;
     margin: 20px auto;
     padding: 10px;
     border: 5px solid #000080;
@@ -22,7 +23,7 @@ main{
     text-align: justify;
     column-count: 3;
     column-gap: 20px;
-    column-fill: balance;
+    column-rule: 2px solid black;
 }
 
 h1{

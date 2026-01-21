@@ -1,0 +1,32 @@
+.caja {
+    display: block;
+    background: lightblue;
+    padding: 10px;
+    margin: 5px;
+    width: 200px;
+}
+
+.texto {
+    display: block;
+    background-color: blanchedalmond;
+}
+
+.contenedor {
+    border: 1px solid #ccc;
+    background-color: #EEE;
+    padding: 10px;
+}
+
+.flex-container {
+    display: flex;
+}
+
+.inline-flex-container {
+    display: inline-flex;
+}
+
+.item {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 5px;
+}
