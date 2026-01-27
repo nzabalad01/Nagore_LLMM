@@ -1,0 +1,20 @@
+.flex-container {
+    display: flex;
+}
+
+.flex-item {
+    flex-grow: 1;
+    border: 2px solid #161515;
+    color: #FFF;
+    text-align: center;
+    line-height: 150px;
+    margin: 10px;
+    font-size: 20px;
+    font-family: Arial;
+    background-color: #E67E22
+}
+
+.flex-item:nth-child(3) {
+    flex-grow: 3;
+    background-color: #2ECC71;
+}
