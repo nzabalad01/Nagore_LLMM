@@ -1,9 +1,10 @@
 .flex-container {
     display: flex;
+    width: 900px;
 }
 
 .flex-item {
-    flex-grow: 1;
+    flex-basis: 400px;
     border: 2px solid #161515;
     color: #FFF;
     text-align: center;
@@ -14,7 +15,17 @@
     background-color: #E67E22
 }
 
+.flex-item:nth-child(1) {
+    flex-shrink: 1;
+    background-color: #2ECC71;
+}
+
+.flex-item:nth-child(2) {
+    flex-shrink: 2;
+    background-color: #2ECC71;
+}
+
 .flex-item:nth-child(3) {
-    flex-grow: 3;
+    flex-shrink: 1;
     background-color: #2ECC71;
 }
