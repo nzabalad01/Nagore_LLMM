@@ -1,0 +1,172 @@
+/* Estilos generales */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+
+    margin: 0px;
+    padding: 0px;
+
+}
+
+/* CABECERA con posición fija, z-index y animación de entrada */
+#cabecera {
+    display: flex;
+    position: sticky;
+    top: 0px;
+    min-height: 100px;
+    z-index: 10;
+    animation: aparecer 1.5s ease-in-out;
+}
+
+#cabecera>div {
+    flex: 1;
+}
+
+
+
+/*Diseño menú principal*/
+#menuprincipal {
+    display: flex;
+    padding: 0px 2px;
+    background: -webkit-linear-gradient(left, #0F76A0, #bedeeb);
+    top: 100px;
+    z-index: 10;
+}
+
+#menuprincipal li {
+    display: inline-block;
+}
+
+#menuprincipal li:hover {
+    background-color: #6FACC6;
+}
+
+#menuprincipal a {
+    font: bold 18px Arial, sans-serif;
+    color: #333333;
+    text-decoration: none;
+}
+
+/* Espaciado para evitar que la cabecera tape el contenido */
+main {
+    display: flex;
+    margin-top: 100px;
+    padding: 20px;
+    gap: 20px;
+}
+
+#infoadicional {
+    width: 500px;
+    padding: 20px;
+    background-color: #E7F1F5;
+    border-radius: 10px;
+}
+
+ 
+    
+    #infoadicional p {
+        font: bold 16px Arial, sans-serif;
+        padding-left: 10px;
+        margin-top: 10px;
+        display: block;
+        background-color: rgb(182, 182, 190);
+        border:black 1px solid;
+        box-shadow: 5px 5px 5px #0b0b0b ;
+        border-radius: 20px;
+    }
+    #infoadicional a {
+        color:#0b0560;
+        /*text-decoration: none;*/
+    }
+
+.articulos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px;
+    background-color: aquamarine;
+    border-radius: 10px;
+   
+}
+
+/* ARTÍCULOS con sombra y animación */
+.articulo {
+    max-width: 500px;
+    padding:20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(28, 25, 25, 0.947);
+    text-align: center;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Efecto de hover en el artículo */
+.articulo:hover {
+    transform: scale(1.05);
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Imagen dentro del artículo */
+.articulo img {
+    height: 150px;
+    border-radius: 10px;
+}
+
+/* Botón con animación */
+.leer-mas {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0F76A0;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+/* Efecto hover en el botón */
+.leer-mas:hover {
+    background-color: #34a0cd;
+    transform: scale(1.1);
+}
+
+/* PIE DE PÁGINA con animación de aparición */
+#pie {
+    background: #0F76A0;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* ANIMACIONES */
+
+/* Animación de entrada para la cabecera */
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Animación de fade-in para el pie de página */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
