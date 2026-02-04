@@ -1,0 +1,97 @@
+/* Estilos generales (Modelo de caja) */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* 1. FLEXBOX: Cabecera  */
+.main-header {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding: 20px;
+    background: linear-gradient(to right, #000080, #0055ff); /* Gradientes */
+    color: white;
+    position: sticky;
+    top: 0px;
+    z-index: 3;
+}
+
+.nav-menu ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav-menu a {
+    color: white;
+    text-decoration: none;
+}
+
+/* 2. GRID: Galería de tarjetas  */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas iguales  */
+    gap: 20px;
+    padding: 40px;
+}
+
+/* 3. POSICIONAMIENTO RELATIVE y ABSOLUTE  */
+.card {
+    background: white;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    position: relative; /* Contenedor de referencia */
+    text-align: center;
+    overflow: hidden; /* Control de desbordamiento */
+    
+    /* PREPARACIÓN PARA TRANSICIÓN */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.badge {
+    position: absolute; /* Posicionado respecto a .card */
+    top: 10px;
+    left: 10px;
+    background-color: red;
+    color: white;
+    padding: 5px 10px;
+    font-size: 12px;
+    border-radius: 5px;
+}
+
+/* 4. TRANSFORMACIONES y FILTROS */
+.card img {
+    width: 90%;
+    filter: grayscale(0.8); /* Filtro escala de grises  */
+    transition: filter 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05); /* Escalado al pasar el ratón  */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2); /* Sombra de caja */
+}
+
+
+/* 5. POSICIONAMIENTO FIXED  */
+.btn-fixed {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #000080;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 20px;
+    z-index: 2;
+}

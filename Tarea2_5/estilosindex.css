@@ -1,0 +1,184 @@
+/* Estilos generales (Modelo de caja) */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    padding-bottom: 100px;
+}
+
+/* 1. FLEXBOX: Cabecera  */
+.main-header {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding: 20px;
+    background: linear-gradient(to right, #000080, #0055ff); /* Gradientes */
+    color: white;
+    position: sticky;
+    top: 0px;
+    z-index: 3;
+    flex-wrap: wrap;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-menu ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.nav-menu a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav-menu a:hover {
+    color: #ffff00;
+}
+
+/* 2. MAIN CONTENT y IMÁGENES RESPONSIVE */
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.inicio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+}
+
+/* 4. TRANSFORMACIONES y FILTROS */
+.inicio img {
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+    max-width: 600px;
+    filter: grayscale(0.8); /* Filtro escala de grises  */
+    transition: filter 0.3s ease, transform 0.3s ease;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+img:hover {
+    transform: scale(1.05); /* Escalado al pasar el ratón  */
+    box-shadow: 0 10px 20px rgba(8, 8, 8, 0.8); /* Sombra de caja */
+    filter: grayscale(0); /* Quitar filtro al hacer hover  */
+}
+
+/* 5. POSICIONAMIENTO FIXED  */
+.btn-fixed {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #000080;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 20px;
+    z-index: 2;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-fixed:hover {
+    background-color: #0055ff;
+    transform: scale(1.1);
+}
+
+
+
+/* MEDIA QUERIES - RESPONSIVE DESIGN  OJO, DE AQUÍ EN ADELANTE NO TOCAR*/
+
+/* Tablets (768px y menos) */
+@media (max-width: 768px) {
+    .main-header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-menu ul {
+        justify-content: center;
+        gap: 15px;
+    }
+
+    main {
+        margin: 30px 10px;
+        padding: 10px;
+    }
+
+    .inicio {
+        margin-top: 30px;
+    }
+
+    .inicio img {
+        max-width: 100%;
+        width: 90%;
+    }
+}
+
+/* Móviles (480px y menos) */
+@media (max-width: 480px) {
+    .logo {
+        font-size: 1.2rem;
+    }
+
+    .nav-menu ul {
+        gap: 10px;
+        font-size: 0.9rem;
+    }
+
+    main {
+        margin: 20px 0;
+        padding: 10px;
+    }
+
+    .inicio {
+        margin-top: 20px;
+    }
+
+    .inicio img {
+        width: 95%;
+        max-width: 100%;
+    }
+
+    .btn-fixed {
+        width: 45px;
+        height: 45px;
+        font-size: 18px;
+        bottom: 70px;
+        right: 10px;
+    }
+
+    .main-footer {
+        padding: 15px 10px;
+        font-size: 0.85rem;
+    }
+}
+
+/* Pantallas grandes (1024px en adelante) */
+@media (min-width: 1024px) {
+    main {
+        max-width: 1200px;
+    }
+
+    .inicio img {
+        width: 70%;
+    }
+}
