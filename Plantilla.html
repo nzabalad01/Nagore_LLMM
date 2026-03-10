@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Laboratorio JavaScript - DAW</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f9;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+        }
+
+        .contenedor {
+            max-width: 900px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(7, 19, 242, 0.5);
+        }
+
+        .zona-resultado {
+            margin-top: 20px;
+            padding: 15px;
+            background: #ecf0f1;
+            border-radius: 5px;
+            min-height: 50px;
+        }
+
+        .consola {
+            margin-top: 20px;
+            padding: 15px;
+            background: #1e1e1e;
+            color: #00ff90;
+            font-family: monospace;
+            border-radius: 5px;
+            min-height: 80px;
+        }
+
+        button {
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            background-color: #3498db;
+            color: white;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="contenedor">
+        <h1>Laboratorio JavaScript</h1>
+
+        <button onclick="ejecutarEjemplo()">Ejecutar ejemplo</button>
+        <button onclick="limpiarConsola()">Limpiar consola</button>
+
+        <div class="consola" id="consola">
+            Consola simulada:
+        </div>
+
+        
+    </div>
+
+    <script>
+        
+        // CONSOLA PARA IR AÑADIENDO CÓDIGO
+
+      let cadena="Hola, soy una cadena de números";
+
+      let longitud = cadena.length; // LONGITUD DE LA CADENA
+        
+      let  remplazar = cadena.replace(/números/gi, "texto"); // REMPLAZAR NÚMEROS POR TEXTO
+
+      let subcadena = cadena.search(/ENA/i); // DEVOLVER POSICIÓN "ENA"
+
+      let array = cadena.split(" "); // DEVOLVER ARRAY
+
+
+      let correo="mario@gmail.com"
+
+      
+
+
+        function ejecutarEjemplo() {
+            escribirConsola(cadena);
+            escribirConsola ("longitud: " +longitud);
+            escribirConsola ("remplazado: " +remplazar);
+            escribirConsola ("Devolver subcadena: " +subcadena);
+            escribirConsola ("Devolver array: " +array);
+        }
+
+        // Función para simular console.log en la página
+        function escribirConsola(mensaje) {
+            document.getElementById("consola").innerHTML += "<br>" + mensaje;
+        }
+        function limpiarConsola() {
+            document.getElementById("consola").innerHTML = "Consola simulada:";
+        }
+
+    </script>
+
+</body>
+</html>
