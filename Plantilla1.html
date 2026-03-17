@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <title>Laboratorio JavaScript - DAW</title>
@@ -59,6 +60,7 @@
         }
     </style>
 </head>
+
 <body>
 
     <div class="contenedor">
@@ -71,32 +73,26 @@
             Consola simulada:
         </div>
 
-        
+
     </div>
 
     <script>
-        
+
         // CONSOLA PARA IR AÑADIENDO CÓDIGO
 
-      let cadena="Hola, soy una cadena de números";
-
-      let longitud = cadena.length; // LONGITUD DE LA CADENA
         
-      let  remplazar = cadena.replace(/números/gi, "texto"); // REMPLAZAR NÚMEROS POR TEXTO
-
-      let subcadena = cadena.search(/ENA/i); // DEVOLVER POSICIÓN "ENA"
-
-      let array = cadena.split(" "); // DEVOLVER ARRAY
-
 
         function ejecutarEjemplo() {
-            escribirConsola(cadena);
-            escribirConsola ("longitud: " +longitud);
-            escribirConsola ("remplazado: " +remplazar);
-            escribirConsola ("Devolver subcadena: " +subcadena);
-            escribirConsola ("Devolver array: " +array);
-        }
+            let cadena ="true";
+            let verdadero=true;
+            let falso=false;
 
+            let resultado=(cadena==verdadero);
+            let suma=verdadero + falso;
+
+            escribirConsola("valor"+resultado);
+            escribirConsola(suma);
+        }
         // Función para simular console.log en la página
         function escribirConsola(mensaje) {
             document.getElementById("consola").innerHTML += "<br>" + mensaje;
@@ -108,4 +104,5 @@
     </script>
 
 </body>
+
 </html>
