@@ -83,24 +83,30 @@
 
         function ejecutarEjemplo() {
 
-            let dia = prompt("Introduce el día");
+            let estacion = prompt("Introduce el mes");
 
-
-            switch (dia) {
-                case "lunes":
-                escribirConsola("Es el inicio de la semana.");
+            switch (estacion) {
+                case "Enero":
+                case "Febrero":
+                case "Marzo":
+                    escribirConsola("Es invierno.");
                     break;
-                case "viernes":
-                escribirConsola("Es el último día laboral.");
+                case "Abril":
+                case "Mayo":
+                case "Junio":
+                    escribirConsola("Es primavera.");
                     break;
-                case "sábado":
-                case "domingo":
-                escribirConsola("Es fin de semana.");
+                case "Julio":
+                case "Agosto":
+                case "Septiembre":
+                    escribirConsola("Es verano.");
                     break;
-                default:
-                escribirConsola("Es un día cualquiera.");
+                case "Octubre":
+                case "Noviembre":
+                case "Diciembre":
+                    escribirConsola("Es otoño.");
+                    break;
             }
-
         }
 
         // Función para simular console.log en la página
